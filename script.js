@@ -10,6 +10,7 @@ city = "Berlin";
 
 // variable initialization
 const firstName = "Montasar";
+const lastName = "J";
 
 // `let` lets us reassign (or change) a variable
 age = 28;
@@ -70,3 +71,50 @@ x %= 5; // x = x % 5
 
 // to the power of 6
 x **= 6; // x = x ** 6
+
+const greeting = "Hello";
+// prettier-ignore
+let name = 'Jane Doe';
+const country = `USA`;
+
+// const example = "John's";
+// const example = 'He said "bla bla".';
+
+let customGreeting = greeting + " " + name + " from " + country;
+// const customGreeting = `${greeting} ${name} from ${country}`;
+
+// customGreeting = customGreeting + "!!!";
+customGreeting += "!!!";
+
+const initials = firstName[0] + lastName[0];
+
+// Using the square bracket notation, target the last character in `customGreeting`
+
+const lastChar = customGreeting[customGreeting.length - 1];
+
+// .length is a property that comes with values of type string
+
+// indexOf
+// target.indexOf(substring) -> return the position of the first occurence of the substring in the target string, or -1
+
+greeting.indexOf("H"); // 0
+greeting.indexOf("h"); // -1
+greeting.indexOf("lo"); // 3
+greeting.indexOf("l"); // 2
+
+// lastIndexOf works as indexOf but from the end of the string
+greeting.lastIndexOf("l"); // 3
+
+// slice returns a substring from a string with a given range specified as parameters
+name.slice(0, 4); // "Jane"
+name.slice(5); // "Doe"
+name.slice(); // "Jane Doe"
+
+const idx = name.indexOf(" ");
+name = name.slice(0, idx) + name.slice(idx).toUpperCase();
+// "Jane DOE"
+
+name[0] = "j";
+// "Jane DOE"
+
+// Strings, like numbers and all the other primitives are immutable -> meaning they can't be altered
