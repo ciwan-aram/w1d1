@@ -1,6 +1,7 @@
 ## Reading
 
 [On let vs const](https://overreacted.io/on-let-vs-const/)
+[Expressions vs statements](http://2ality.com/2012/09/expressions-vs-statements.html)
 
 ## Project-1 examples
 
