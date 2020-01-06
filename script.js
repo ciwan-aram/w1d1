@@ -118,3 +118,36 @@ name[0] = "j";
 // "Jane DOE"
 
 // Strings, like numbers and all the other primitives are immutable -> meaning they can't be altered
+
+// Boolean expressions
+5 > 3; // true
+0 <= -1; // false
+
+firstName === "Montasar"; // true
+firstName === "qwerty"; // false
+
+// logical operators
+// OR ||
+// the || operator will evaluate to the first truthy expression it encounters, or to the last falsy expression
+5 > 3 || 10 || "abc"; // true
+false || 0 || 42 || "def"; // 42
+4 < 3 || "" || 0 || NaN; // NaN
+
+// AND &&
+// the && operator will evaluate to the first falsy expression it encounters or to the last truthy expression
+true && 1; // 1
+42 && null && undefined && "xyz"; // null
+-1 && "2" && -3; // -3
+
+// NOT !
+// the ! operator will return a boolean that is the negated value of the expression
+!false; // true
+!42; // false
+!(4 > 2); // false
+
+let foo;
+console.log(foo); // undefined
+// undefined represents the unintentional absence of value
+(10).length; // undefined
+
+// null represents the intentional absence of value
