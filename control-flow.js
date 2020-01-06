@@ -20,7 +20,7 @@ if (age >= 18) {
 } else {
   alert("You are too young to apply for a driving license");
 }
-*/
+
 
 const language = prompt("What is your mother tongue?");
 
@@ -39,4 +39,17 @@ switch (language) {
     break;
   default:
     console.log("Non recognized language");
+}
+
+
+let counter = 1;
+while (counter <= 100) {
+  console.log(counter);
+  counter += 1;
+}
+
+*/
+
+for (let counter = 100; counter >= 1; counter -= 1) {
+  console.log(counter);
 }
